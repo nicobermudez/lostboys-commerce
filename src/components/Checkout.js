@@ -51,7 +51,7 @@ const Checkout = () => {
     <StripeCheckout
       token={onToken}
       stripeKey={process.env.STRIPE_PUBLISHABLE_KEY}
-      name="gatsby-starter-stripe" // the pop-in header title
+      name="Lost Boys Creations" // the pop-in header title
       description={`${count} Items`} // the pop-in header subtitle
       image={icon} // the pop-in header image (default none)
       panelLabel="Pay" // prepended to the amount in the bottom pay button

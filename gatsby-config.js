@@ -6,7 +6,7 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `starter-stripe`,
+    title: `Lost Boys Creations`,
     description: `Stripe storefront starter for Gatsby`,
     author: `Brock McElroy <brockmcelroy.com>`
   },
