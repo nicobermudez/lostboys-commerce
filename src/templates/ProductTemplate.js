@@ -1,12 +1,12 @@
 import React from 'react'
-import Layout from '../components/Layout'
+import App from '../pages/App'
 import ProductPage from '../components/ProductPage'
 
 const ItemTemplate = ({ pageContext: { id } }) => {
   return (
-    <Layout>
+    <App>
       <ProductPage productId={id} />
-    </Layout>
+    </App>
   )
 }
 

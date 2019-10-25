@@ -52,7 +52,7 @@ The ProductsProvider component provides normalized Product and Sku data sourced 
 
    This starter aims to handle some of the plumbing needed to integrate Gatsby & Stripe. Everything else (ex. styling) is left to you and your preferred methods.
 
-   The source files for [Netlify Functions](https://www.netlify.com/docs/functions/) are located at `/src/functions`, they are then built into the files in `/functions`. Visit the documentation for more information on their structure.
+   The source files for [Netlify Functions](https://www.netlify.com/docs/functions/) are located at `/src/utils/functions`, they are then built into the files in `/functions`. Visit the documentation for more information on their structure.
 
    The `ProductsProvider` & `CartProvider` components centralize data & logic, which are then passed through React's [Context API](https://reactjs.org/docs/context.html). The starter's components are written using [Hooks](https://reactjs.org/docs/hooks-intro.html).
 

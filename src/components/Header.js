@@ -1,43 +1,27 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { Link } from 'gatsby'
 import Cart from './Cart'
+import lostboys from "../../images/lostboys.png"
+import styled from "@emotion/styled"
+import { navigation } from "react-navigation-hooks";
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      margin: `2rem`
-    }}
-  >
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'center'
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: '#555',
-            textDecoration: `none`,
-            fontWeight: 300
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+const HeaderContainer = styled.div({
+  display: "flex",
+  justifyContent: "space-between",
+  padding: "40px",
+})
+
+const Logo = styled.img({
+  width: "50px",
+})
+
+
+const Header = () => (
+  <div>
+    <HeaderContainer>
+      <Logo src={lostboys} alt="Lost Boys" />
       <Cart />
-    </div>
-  </header>
+    </HeaderContainer>
+  </div>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string
-}
-
-Header.defaultProps = {
-  siteTitle: ``
-}
 
 export default Header

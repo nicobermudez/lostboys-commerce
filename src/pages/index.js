@@ -1,17 +1,13 @@
-import React, { useEffect } from 'react';
-import Layout from '../components/Layout';
-import { Loading } from './Loading';
-import Products from '../components/Products';
-import SEO from '../components/SEO';
+import React from 'react'
+import App from './App'
+import SEO from '../components/SEO'
+import Products from '../components/Products'
 
-const IndexPage = () => {
-
-    return (
-      <Layout>
-        <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-        <Loading />
-      </Layout>
-    )
-}
+const IndexPage = () => (
+  <App>
+    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <Products />
+  </App>
+)
 
 export default IndexPage
